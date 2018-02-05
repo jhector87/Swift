@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFd-af-PDN">
+                                <rect key="frame" x="113" y="214" width="150" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-QI-edr">
+                                <rect key="frame" x="113" y="267" width="150" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1it-qh-IPP">
+                                <rect key="frame" x="115.5" y="506" width="145" height="34"/>
+                                <color key="backgroundColor" red="0.92873149226020135" green="1" blue="0.97613175630994009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="9a8-cl-NlS"/>
+                                    <constraint firstAttribute="height" constant="34" id="l9M-5k-BwK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Calulate">
+                                    <color key="titleColor" red="0.075690709049999999" green="0.83882462980000005" blue="0.713250041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UvX-lP-pU1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr9-0M-c9E">
+                                <rect key="frame" x="188" y="345" width="0.0" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pfe-Ny-BbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-2"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-Uj-sHm">
+                                <rect key="frame" x="163" y="138" width="49" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.075690709049999999" green="0.83882462980000005" blue="0.713250041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iFd-af-PDN" firstAttribute="leading" secondItem="ADl-QI-edr" secondAttribute="leading" id="3gO-lX-GuE"/>
+                            <constraint firstItem="iFd-af-PDN" firstAttribute="top" secondItem="wmf-Uj-sHm" secondAttribute="bottom" constant="45" id="5bh-5u-hfd"/>
+                            <constraint firstItem="iFd-af-PDN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="194" id="A4G-Rg-09u"/>
+                            <constraint firstItem="1it-qh-IPP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CVe-o5-eNF"/>
+                            <constraint firstItem="sr9-0M-c9E" firstAttribute="top" secondItem="ADl-QI-edr" secondAttribute="bottom" constant="48" id="Dh5-EA-zR5"/>
+                            <constraint firstItem="ADl-QI-edr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TqX-ed-4v2"/>
+                            <constraint firstItem="iFd-af-PDN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="bhK-l2-GqT"/>
+                            <constraint firstItem="iFd-af-PDN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exw-WT-MTD"/>
+                            <constraint firstItem="ADl-QI-edr" firstAttribute="top" secondItem="iFd-af-PDN" secondAttribute="bottom" constant="23" id="jl7-p4-wBt"/>
+                            <constraint firstItem="sr9-0M-c9E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="off-9O-hFD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1it-qh-IPP" secondAttribute="bottom" constant="127" id="se2-YT-wkx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addtionSwitch" destination="wmf-Uj-sHm" id="Uit-1W-zvO"/>
+                        <outlet property="bottomTextField" destination="ADl-QI-edr" id="Tfw-ck-N6u"/>
+                        <outlet property="myLabel" destination="sr9-0M-c9E" id="yOh-sS-k3i"/>
+                        <outlet property="topTextField" destination="iFd-af-PDN" id="v9X-4b-i9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.92873149229999996" green="1" blue="0.97613175630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
